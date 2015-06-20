@@ -15,6 +15,7 @@ public class IndexedList implements List<Node> {
 	
 	private ArrayList<Node> elmnts;
 	DoublyLinkedList doub;
+	int k;
 
 	public IndexedList(){
 		elmnts = new ArrayList<>();
@@ -37,11 +38,8 @@ public class IndexedList implements List<Node> {
 	}
 	@Override
 	public boolean add(Node n){
-		if (list.isEmpty())
-		{
-
-		}
-		return false;
+		doub.add(n.data);
+		return true;
 	}
 	/**
 	public void add( int n, Node element) {
@@ -59,7 +57,8 @@ public class IndexedList implements List<Node> {
 	 */
 	@Override
 	public Node get(int index) {
-
+		Node temp = null;
+		return temp;
 	}
 
 	@Override
